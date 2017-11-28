@@ -4,6 +4,13 @@ function getIt(){
     alert("Hey!");
   })
 }
+function frameIt(){
+  $('img').on('load', function(){
+    $("img").addClass("tasty")
+
+});
+
+}
 $(document).ready(function(){
 getIt()
 // call functions here
