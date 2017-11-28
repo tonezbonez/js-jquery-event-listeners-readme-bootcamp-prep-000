@@ -9,6 +9,13 @@ function frameIt(){
     $("img").addClass("tasty");
   });
 }
+function pressIt(){
+  $("form").on('keydown', function(key) {
+  if(key.which == 71){
+      alert('g was pressed');
+  }
+});
+}
 $(document).ready(function(){
 getIt()
 frameIt()
